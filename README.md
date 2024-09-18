@@ -26,8 +26,7 @@ The dataset includes council voting data for the years 2023 and 2024, with the f
 	•	Decision: Final outcome of the vote (e.g., Carried Unanimously, Not Carried).  
 
 <ins>Additional details include: </ins>    
-
-	•	Agenda Description: Summary of the topic or issue being voted on during the meeting.  
+•	Agenda Description: Summary of the topic or issue being voted on during the meeting.  
 
 <ins>Methodology:</ins>    
 
