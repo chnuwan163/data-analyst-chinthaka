@@ -48,12 +48,14 @@ DataBrew Project Completion
 Track and log all interactions with the dataset, including API calls, access, and modifications, ensuring that every action is auditable.  
 	•	IAM User Permissions Configuration:  
 	•	Data Availability Practices:  
-	•	S3 Versioning: Enable versioning on the S3 bucket storing the voting data to maintain multiple versions of the dataset, preventing accidental deletions or overwrites.
+	•	S3 Versioning: Enable versioning on the S3 bucket storing the voting data to maintain multiple versions of the dataset, preventing accidental deletions or overwrites.  
+ 
 S3 bucket structure  
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/0bec91c2-adc7-499b-9f90-4297b6a2064c">  
 •	Cross-Region Replication: Enable cross-region replication to ensure that the voting data is available even if a regional failure occurs. This ensures continued access to the data for reporting and analysis.  
 •	Data Integrity Practices:  
 •	S3 Bucket Encryption: Enable Server-Side Encryption (SSE) using AWS KMS (Key Management Service) to ensure that data remains encrypted at rest, protecting sensitive council voting records.  
+
 KMS key  
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/3c68b1d3-a75e-4107-8d43-8d48accaaf03">  
 Encryption  
@@ -64,8 +66,9 @@ Encryption
 
 2.	Descriptive Statistics:  
 •	Calculated key statistics using AWS Athena, such as:
-Athena Database
-<img width="452" alt="image" src="https://github.com/user-attachments/assets/604ef786-91ed-4086-b911-08272397ce67">
+
+Athena Database  
+<img width="452" alt="image" src="https://github.com/user-attachments/assets/604ef786-91ed-4086-b911-08272397ce67">  
 
  
 •	Total number of votes cast by each council member.  
@@ -75,8 +78,10 @@ Athena Database
 •	CloudTrail Logs:  
 Verified that all descriptive statistics were generated using securely accessed and unaltered datasets, as recorded by CloudTrail.  
 	3.	Data Visualization:  
+ 
  Data Visualization in web server  
  <img width="452" alt="image" src="https://github.com/user-attachments/assets/5dbfd064-f077-4ef3-9714-c2251c58af4f">  
+ 
  Data Sharing  
  <img width="452" alt="image" src="https://github.com/user-attachments/assets/e1e7dc35-7fc3-4852-a818-cb13af3aef67">  
  
@@ -101,6 +106,7 @@ Ensured that all findings were based on secure, validated data as tracked throug
 Allowed only Admins to review and finalize insights, with access control monitored via IAM policies.  
 	6.	Data Availability and Integrity Practices:  
 	•	S3 Versioning:    
+ 
  Bucket Versioning  
  <img width="468" alt="image" src="https://github.com/user-attachments/assets/3eeed0e3-e4e1-4e8b-afc6-807d8aa1125e">  
  
@@ -114,6 +120,7 @@ Used AWS KMS for encrypting the dataset in S3 to ensure that voting records were
 •	AWS S3: For storing raw, curated, and cleaned council voting records.  
 •	AWS DataBrew: Used for data cleaning, preparation, and standardization of voting records.  
 •	AWS Glue: To implement ETL (Extract, Transform, Load) pipelines for data transformation and aggregation.  
+
 ETL Job  
 <img width="452" alt="image" src="https://github.com/user-attachments/assets/ec1ebcc1-4051-4460-ad09-8c6b12681f3a">  
 
@@ -124,13 +131,13 @@ ETL Job
 •	Detailed Report: A report summarizing the entire process, including data collection, cleaning, and descriptive analysis of council voting patterns.  
 •	Data Visualizations: Visualizations such as bar charts and time series plots showcasing council member voting behavior and participation rates, presented using Excel.  
 •	Data Pipeline Documentation: Documentation of the AWS Glue ETL pipeline used to process and analyze the voting data.  
-•	Data Governance & Security Report: An outline of the data governance strategies applied, including KMS encryption, S3 versioning, and cross-region replication for data protection. 
+•	Data Governance & Security Report: An outline of the data governance strategies applied, including KMS encryption, S3 versioning, and cross-region replication for data protection.  
+
 Bucket Replication  
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/308eee91-719b-442f-b4d6-b6a67665d75c">  
+
 PII Detection  
 <img width="468" alt="image" src="https://github.com/user-attachments/assets/ce336e85-7986-43e5-a1c2-5bddbe6f87a7">  
-
-
 
 
 **Data Wrangling**
